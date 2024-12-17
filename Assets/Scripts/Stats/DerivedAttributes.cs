@@ -7,6 +7,8 @@ namespace Stats
     [Serializable]
     public class DerivedAttributes
     {
+        //might be unsafe to leave these public
+        //consider refactoring
         public DerivedAttributeType DerivedAttributeType;
         public float DerivedAttributeBaseValue;
         public float DerivedAttributeMinValue = 0;
