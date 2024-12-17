@@ -13,9 +13,7 @@ namespace Stats
         public float DerivedAttributeBaseValue;
         public float DerivedAttributeMinValue = 0;
         public float DerivedAttributeCurrentValue;
-        public float PerStatModifier = 1.2f;
-
-
+        public float PerStatModifier = 1.2f; //maybe move to CharacterClass?
     }
     
     [Serializable]
