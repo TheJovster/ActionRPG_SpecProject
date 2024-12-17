@@ -40,7 +40,7 @@ namespace Player
 
     private void Start()
     {
-        
+        _characterClass.CharacterExperience.RecalculateEXPUntilNextLevel();
     }
 
     private void Update()

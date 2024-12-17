@@ -10,6 +10,7 @@ namespace Stats
         public ClassName ClassName;
         public List<Stat> Stats = new List<Stat>();
         public List<DerivedAttributes> DerivedAttributeList = new List<DerivedAttributes>();
+        public CharacterExperience CharacterExperience;
     }
 
     [Serializable]

@@ -11,7 +11,12 @@ namespace Stats
         public float DerivedAttributeBaseValue;
         public float DerivedAttributeMinValue;
         public float DerivededAttirbuteCurrentValue;
-        
+
+
+        public void RecalculateDerivedAttributes(DerivedAttributeType attributeType)
+        {
+            
+        }
     }
     
     [Serializable]
