@@ -152,26 +152,42 @@ MonoBehaviour:
     ClassName: 0
     Stats:
     - StatType: 0
-      StatName: 
-      CurrentValue: 0
-      BaseValue: 0
+      CurrentValue: 40
+      BaseValue: 40
     - StatType: 1
-      StatName: 
-      CurrentValue: 0
-      BaseValue: 0
+      CurrentValue: 30
+      BaseValue: 30
     - StatType: 2
-      StatName: 
-      CurrentValue: 0
-      BaseValue: 0
+      CurrentValue: 20
+      BaseValue: 20
     - StatType: 3
-      StatName: 
-      CurrentValue: 0
-      BaseValue: 0
-    Strength:
-      StatType: 0
-      StatName: 
-      CurrentValue: 0
-      BaseValue: 0
+      CurrentValue: 1
+      BaseValue: 1
+    DerivedAttributeList:
+    - DerivedAttributeType: 0
+      DerivedAttributeValue: 0
+      DerivedAttributeBaseValue: 150
+      DerivedAttributeMinValue: 0
+      DerivedAttributeCurrentValue: 0
+      PerStatModifier: 1.2
+    - DerivedAttributeType: 1
+      DerivedAttributeValue: 0
+      DerivedAttributeBaseValue: 150
+      DerivedAttributeMinValue: 0
+      DerivedAttributeCurrentValue: 0
+      PerStatModifier: 1.2
+    - DerivedAttributeType: 2
+      DerivedAttributeValue: 0
+      DerivedAttributeBaseValue: 0
+      DerivedAttributeMinValue: 0
+      DerivedAttributeCurrentValue: 0
+      PerStatModifier: 1.2
+    CharacterExperience:
+      CurrentExperience: 0
+      CurrentLevel: 1
+      EXPUntilNextLevel: 0
+      EXPPerLevelRequirement: 1000
+      EXPPerLevelModifier: 1.5
 --- !u!114 &5878934932359142952
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -740,20 +740,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1439298051594845566, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
-      propertyPath: _characterClass.DerivedAttributeList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1439298051594845566, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
-      propertyPath: _characterClass.CharacterExperience.CurrentLevel
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1439298051594845566, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
-      propertyPath: _characterClass.DerivedAttributeList.Array.data[1].DerivedAttributeType
+      propertyPath: _characterClass.DerivedAttributeList.Array.data[0].DerivedAttributeBaseValue
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1439298051594845566, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
-      propertyPath: _characterClass.DerivedAttributeList.Array.data[2].DerivedAttributeType
-      value: 2
+      propertyPath: _characterClass.DerivedAttributeList.Array.data[1].DerivedAttributeBaseValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439298051594845566, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
+      propertyPath: _characterClass.DerivedAttributeList.Array.data[2].DerivedAttributeBaseValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1456219110396629383, guid: c9d2bd1a943a62c4daba37c85784b67d, type: 3}
       propertyPath: m_Name

@@ -41,6 +41,7 @@ namespace Player
     private void Start()
     {
         _characterClass.CharacterExperience.RecalculateExpUntilNextLevel();
+        _characterClass.RecalculateDerivedAttributes();
     }
 
     private void Update()

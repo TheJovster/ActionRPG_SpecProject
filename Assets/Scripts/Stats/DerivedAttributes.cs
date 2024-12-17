@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 namespace Stats
 {
@@ -10,13 +11,10 @@ namespace Stats
         public float DerivedAttributeValue;
         public float DerivedAttributeBaseValue;
         public float DerivedAttributeMinValue;
-        public float DerivededAttirbuteCurrentValue;
+        public float DerivedAttributeCurrentValue;
+        public float PerStatModifier = 1.2f;
 
 
-        public void RecalculateDerivedAttributes(DerivedAttributeType attributeType)
-        {
-            
-        }
     }
     
     [Serializable]
