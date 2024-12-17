@@ -3,14 +3,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 
-public class PlayerController : MonoBehaviour
+namespace Player
+{
+    public class PlayerController : MonoBehaviour
 {
     public string CharacterName { get; internal set; }
     private InputSystem_Actions _inputActions;
     private PlayerMotor _playerMotor;
     private PlayerCombatant _playerCombatant;
     private Camera _mainCamera;
-    private List<SO_Modifier> Modifiers = new List<SO_Modifier>();
+    // declare the modifier scriptable object - although it makes no sense to me
+    // private List<SO_Modifier> Modifiers = new List<SO_Modifier>();
 
     private void OnEnable()
     {
@@ -44,14 +47,14 @@ public class PlayerController : MonoBehaviour
         {
             _playerMotor.StopMovement();
         }
-        
-        Modifiers.ForEach(m => {
+        //redo modifiers in a way that makes sense to me        
+        /*Modifiers.ForEach(m => {
             if (m.HasExpired(Time.deltaTime))
             {
                 RemoveModifier(m);
                 Destroy(m);
             }
-        });
+        });*/
     }
 
     
@@ -79,8 +82,8 @@ public class PlayerController : MonoBehaviour
     
 
     
-
-    public float GetTotalValueForStat(SO_Stat Stat)
+//keep these and refactor
+    /*public float GetTotalValueForStat(SO_Stat Stat)
     {
         return Stat.BaseValue + Modifiers.Where(m => m.AffectedStat == Stat).Sum(m => m.ValueChange);
     }
@@ -103,5 +106,7 @@ public class PlayerController : MonoBehaviour
     internal void Attack(Enemy enemy)
     {
         enemy.GetDamage(1f);
-    }
+    }*/
 }
+}
+

@@ -1,14 +1,14 @@
 using Helpers;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.TextCore.Text;
+using Player;
 
 namespace Diablo
 {
     public class GameManager : MonoSingleton<GameManager>
     {
-        public List<SO_State> States;
+        //Seriously, what is up with this game manager?
+        //I'll do it in a way that makes sense to me.
+        
+        //public List<SO_State> States;
         
         private PlayerController character;
 

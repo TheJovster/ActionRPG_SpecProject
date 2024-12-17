@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public SO_Modifier Modifier;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -15,11 +15,11 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    public SO_Modifier Interact()
+    }
+    //add a getter for the StatModifier
+    /*public SO_Modifier Interact()
     {
         return Modifier;
-    }
+    }*/
 }
