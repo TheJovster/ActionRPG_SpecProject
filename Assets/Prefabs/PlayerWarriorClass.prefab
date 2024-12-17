@@ -165,20 +165,17 @@ MonoBehaviour:
       BaseValue: 1
     DerivedAttributeList:
     - DerivedAttributeType: 0
-      DerivedAttributeValue: 0
-      DerivedAttributeBaseValue: 150
+      DerivedAttributeBaseValue: 1
       DerivedAttributeMinValue: 0
       DerivedAttributeCurrentValue: 0
       PerStatModifier: 1.2
     - DerivedAttributeType: 1
-      DerivedAttributeValue: 0
-      DerivedAttributeBaseValue: 150
+      DerivedAttributeBaseValue: 1
       DerivedAttributeMinValue: 0
       DerivedAttributeCurrentValue: 0
       PerStatModifier: 1.2
     - DerivedAttributeType: 2
-      DerivedAttributeValue: 0
-      DerivedAttributeBaseValue: 0
+      DerivedAttributeBaseValue: 1
       DerivedAttributeMinValue: 0
       DerivedAttributeCurrentValue: 0
       PerStatModifier: 1.2
@@ -188,6 +185,10 @@ MonoBehaviour:
       EXPUntilNextLevel: 0
       EXPPerLevelRequirement: 1000
       EXPPerLevelModifier: 1.5
+    StrengthIndex: 0
+    VitalityIndex: 1
+    DexterityIndex: 2
+    MagicIndex: 3
 --- !u!114 &5878934932359142952
 MonoBehaviour:
   m_ObjectHideFlags: 0
