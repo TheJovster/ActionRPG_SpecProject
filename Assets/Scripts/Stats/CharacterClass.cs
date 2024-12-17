@@ -9,8 +9,7 @@ namespace Stats
 
         public ClassName ClassName;
         public List<Stat> Stats = new List<Stat>();
-        public Stat Strength;
-
+        public List<DerivedAttributes> DerivedAttributeList = new List<DerivedAttributes>();
     }
 
     [Serializable]
