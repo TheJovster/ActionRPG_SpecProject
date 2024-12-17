@@ -14,24 +14,24 @@ namespace Stats
         
         public void RecalculateDerivedAttributes()
         {
-            foreach (var DerivedAttribute in DerivedAttributeList)
+            foreach (var derivedAttribute in DerivedAttributeList)
             {
-                switch (DerivedAttribute.DerivedAttributeType)
+                switch (derivedAttribute.DerivedAttributeType)
                 {
                     case DerivedAttributeType.Health:
-                        DerivedAttribute.DerivedAttributeCurrentValue =
-                            DerivedAttribute.DerivedAttributeBaseValue +
-                            Stats[1].CurrentValue * DerivedAttribute.PerStatModifier;                            
+                        derivedAttribute.DerivedAttributeCurrentValue =
+                            derivedAttribute.DerivedAttributeBaseValue +
+                            Stats[1].CurrentValue * derivedAttribute.PerStatModifier;                            
                         break;
                     case DerivedAttributeType.Mana:
-                        DerivedAttribute.DerivedAttributeCurrentValue =
-                            DerivedAttribute.DerivedAttributeBaseValue +
-                            Stats[3].CurrentValue * DerivedAttribute.PerStatModifier;   
+                        derivedAttribute.DerivedAttributeCurrentValue =
+                            derivedAttribute.DerivedAttributeBaseValue +
+                            Stats[3].CurrentValue * derivedAttribute.PerStatModifier;   
                         break;
                     case DerivedAttributeType.BaseDamage:
-                        DerivedAttribute.DerivedAttributeCurrentValue =
-                            DerivedAttribute.DerivedAttributeBaseValue +
-                            Stats[0].CurrentValue * DerivedAttribute.PerStatModifier;   
+                        derivedAttribute.DerivedAttributeCurrentValue =
+                            derivedAttribute.DerivedAttributeBaseValue +
+                            Stats[0].CurrentValue * derivedAttribute.PerStatModifier;   
                         //TODO: Make a better system for calculating damage
                         break;
                 }

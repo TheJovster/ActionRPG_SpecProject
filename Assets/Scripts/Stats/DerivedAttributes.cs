@@ -8,9 +8,8 @@ namespace Stats
     public class DerivedAttributes
     {
         public DerivedAttributeType DerivedAttributeType;
-        public float DerivedAttributeValue;
         public float DerivedAttributeBaseValue;
-        public float DerivedAttributeMinValue;
+        public float DerivedAttributeMinValue = 0;
         public float DerivedAttributeCurrentValue;
         public float PerStatModifier = 1.2f;
 
