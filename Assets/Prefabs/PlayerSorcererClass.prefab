@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1439298051594845566}
   - component: {fileID: 5878934932359142952}
   m_Layer: 0
-  m_Name: Player
+  m_Name: PlayerSorcererClass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6263f6447a64c9d46a905c192a50ffd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _characterClass:
+    ClassName: 2
+    Stats:
+    - StatType: 0
+      CurrentValue: 0
+      BaseValue: 0
+    - StatType: 1
+      CurrentValue: 0
+      BaseValue: 0
+    - StatType: 2
+      CurrentValue: 0
+      BaseValue: 0
+    - StatType: 3
+      CurrentValue: 0
+      BaseValue: 0
+    Strength:
+      StatType: 0
+      CurrentValue: 0
+      BaseValue: 0
 --- !u!114 &5878934932359142952
 MonoBehaviour:
   m_ObjectHideFlags: 0

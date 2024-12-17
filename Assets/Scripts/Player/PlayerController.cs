@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
+using Stats;
+
 
 namespace Player
 {
@@ -14,7 +16,12 @@ namespace Player
     private Camera _mainCamera;
     // declare the modifier scriptable object - although it makes no sense to me
     // private List<SO_Modifier> Modifiers = new List<SO_Modifier>();
+    
+    private int _currentLevel;
 
+    [SerializeField] private CharacterClass _characterClass;
+    
+    
     private void OnEnable()
     {
         if (_inputActions == null)
