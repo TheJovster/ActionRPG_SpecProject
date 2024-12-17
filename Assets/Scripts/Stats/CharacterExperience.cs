@@ -12,10 +12,12 @@ namespace Stats
         public float EXPPerLevelRequirement = 1000;
         public float EXPPerLevelModifier = 1.5f;
         
-        public void RecalculateEXPUntilNextLevel()
+        public void RecalculateExpUntilNextLevel()
         {
             EXPUntilNextLevel = EXPPerLevelRequirement * EXPPerLevelModifier * CurrentLevel;
         }
+        
+        
     }
 }
 
