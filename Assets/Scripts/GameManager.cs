@@ -14,7 +14,7 @@ namespace Diablo
 
         void Start()
         {
-            character = FindObjectOfType<PlayerController>();
+            character = FindFirstObjectByType<PlayerController>();
         }
     }
 }
