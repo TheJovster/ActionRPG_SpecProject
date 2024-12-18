@@ -25,35 +25,40 @@ namespace Stats
                 switch (derivedAttribute.DerivedAttributeType)
                 {
                     case DerivedAttributeType.Health:
-                        derivedAttribute.DerivedAttributeCurrentValue =
+                        derivedAttribute.DerivedAttributeMaxValue =
                             derivedAttribute.DerivedAttributeBaseValue +
-                            Stats[VitalityIndex].CurrentValue * derivedAttribute.PerStatModifier;                            
+                            Stats[VitalityIndex].CurrentValue * derivedAttribute.PerStatModifier;
+                            derivedAttribute.DerivedAttributeCurrentValue = derivedAttribute.DerivedAttributeMaxValue;
                         break;
                     case DerivedAttributeType.Mana:
-                        derivedAttribute.DerivedAttributeCurrentValue =
+                        derivedAttribute.DerivedAttributeMaxValue =
                             derivedAttribute.DerivedAttributeBaseValue +
                             Stats[MagicIndex].CurrentValue * derivedAttribute.PerStatModifier;   
+                            derivedAttribute.DerivedAttributeCurrentValue = derivedAttribute.DerivedAttributeMaxValue;
                         break;
                         case DerivedAttributeType.BaseDamage:
                         if (ClassName == ClassName.Warrior)
                         {
-                            derivedAttribute.DerivedAttributeCurrentValue =
+                                derivedAttribute.DerivedAttributeMaxValue =
                                 derivedAttribute.DerivedAttributeBaseValue +
-                                Stats[StrengthIndex].CurrentValue * derivedAttribute.PerStatModifier;  
+                                Stats[StrengthIndex].CurrentValue * derivedAttribute.PerStatModifier;
+                                derivedAttribute.DerivedAttributeCurrentValue = derivedAttribute.DerivedAttributeMaxValue;
                         }
 
                         if (ClassName == ClassName.Assassin)
                         {
-                            derivedAttribute.DerivedAttributeCurrentValue =
+                                derivedAttribute.DerivedAttributeMaxValue =
                                 derivedAttribute.DerivedAttributeBaseValue +
                                 Stats[DexterityIndex].CurrentValue * derivedAttribute.PerStatModifier;   
+                                derivedAttribute.DerivedAttributeCurrentValue = derivedAttribute.DerivedAttributeMaxValue;
                         }
 
                         if (ClassName == ClassName.Sorcerer)
                         {
-                            derivedAttribute.DerivedAttributeCurrentValue =
+                                derivedAttribute.DerivedAttributeMaxValue =
                                 derivedAttribute.DerivedAttributeBaseValue +
                                 Stats[MagicIndex].CurrentValue * derivedAttribute.PerStatModifier;   
+                                derivedAttribute.DerivedAttributeCurrentValue = derivedAttribute.DerivedAttributeMaxValue;
                         }
 
                         //TODO: Make a better system for calculating damage

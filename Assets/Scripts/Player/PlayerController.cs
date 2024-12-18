@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
 using Stats;
+using UI;
 
 
 namespace Player
@@ -42,10 +43,14 @@ namespace Player
     {
         _characterClass.CharacterExperience.RecalculateExpUntilNextLevel();
         _characterClass.RecalculateDerivedAttributes();
+        
+        UIManager.Instance.SetHealthImageFill();
+        UIManager.Instance.SetManaImageFill();
     }
 
     private void Update()
     {
+
         if (_playerMotor && _inputActions.Player.Action.IsPressed())
         {
             MovePlayer();
@@ -55,6 +60,9 @@ namespace Player
         {
             _playerMotor.StopMovement();
         }
+        
+        
+
         //redo modifiers in a way that makes sense to me        
         /*Modifiers.ForEach(m => {
             if (m.HasExpired(Time.deltaTime))
@@ -86,35 +94,14 @@ namespace Player
     {
         _inputActions.Disable();
     }
-    
-    
 
-    
-//keep these and refactor
-    /*public float GetTotalValueForStat(SO_Stat Stat)
-    {
-        return Stat.BaseValue + Modifiers.Where(m => m.AffectedStat == Stat).Sum(m => m.ValueChange);
-    }
 
-    public float GetMaxValueForStat(SO_Stat Stat)
+    public CharacterClass GetCharacterClass()
     {
-        return Stat.BaseMaxValue + Modifiers.Where(m => m.AffectedStat == Stat).Sum(m => m.MaxValueChange);
+        return _characterClass;
     }
     
-    public void AddModifier(SO_Modifier modifier)
-    {
-        Modifiers.Add(modifier);
-    }
 
-    public void RemoveModifier(SO_Modifier modifier)
-    {
-        Modifiers.Remove(modifier);
     }
-
-    internal void Attack(Enemy enemy)
-    {
-        enemy.GetDamage(1f);
-    }*/
-}
 }
 

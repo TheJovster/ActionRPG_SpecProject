@@ -1,5 +1,8 @@
+using System;
 using Helpers;
 using Player;
+using Unity.Cinemachine;
+using UnityEngine;
 
 namespace Diablo
 {
@@ -11,10 +14,21 @@ namespace Diablo
         //public List<SO_State> States;
         
         private PlayerController character;
+        [SerializeField] private CinemachineCamera followCamera;
+
+        private void Awake()
+        {
+            if (followCamera == null)
+            {
+                followCamera = FindFirstObjectByType<CinemachineCamera>();
+            }
+            character = FindFirstObjectByType<PlayerController>();
+            
+        }
 
         void Start()
         {
-            character = FindFirstObjectByType<PlayerController>();
+            
         }
     }
 }

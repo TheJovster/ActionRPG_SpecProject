@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using Unity.VisualScripting;
+using UnityEngine.UIElements;
 
 namespace Stats
 {
@@ -13,7 +14,10 @@ namespace Stats
         public float DerivedAttributeBaseValue;
         public float DerivedAttributeMinValue = 0;
         public float DerivedAttributeCurrentValue;
+        public float DerivedAttributeMaxValue;
         public float PerStatModifier = 1.2f; //maybe move to CharacterClass?
+
+        public delegate void OnValueChanged(float DerivedAttributeCurrentValue);
     }
     
     [Serializable]
