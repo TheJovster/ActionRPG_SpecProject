@@ -17,7 +17,7 @@ namespace Stats
         public float DerivedAttributeMaxValue;
         public float PerStatModifier = 1.2f; //maybe move to CharacterClass?
 
-        public delegate void OnValueChanged(float DerivedAttributeCurrentValue);
+        
     }
     
     [Serializable]
