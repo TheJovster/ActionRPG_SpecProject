@@ -61,8 +61,9 @@ namespace Player
             _playerMotor.StopMovement();
         }
         
+        TestDamage();
+        TestHeal();
         
-
         //redo modifiers in a way that makes sense to me        
         /*Modifiers.ForEach(m => {
             if (m.HasExpired(Time.deltaTime))
@@ -95,13 +96,26 @@ namespace Player
         _inputActions.Disable();
     }
 
+    private void TestDamage()
+    {
+        if (_inputActions.Player.TakeDamage.WasPressedThisFrame())
+        {
+            _characterClass.TakeDamage(5);
+        }
+    }
+
+    private void TestHeal()
+    {
+        if (_inputActions.Player.Heal.WasPressedThisFrame())
+        {
+            _characterClass.HealCharacter(5);
+        }
+    }
 
     public CharacterClass GetCharacterClass()
     {
         return _characterClass;
     }
-    
-
     }
 }
 
